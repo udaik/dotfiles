@@ -1,0 +1,8 @@
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
+fi
+
+eval "$(register-python-argcomplete conda)"
+
+
+export PATH="$HOME/.cargo/bin:$PATH"

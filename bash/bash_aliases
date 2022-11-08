@@ -1,0 +1,4 @@
+alias l='ls -CF'
+alias vi='vim'
+alias make='colormake'
+alias conda_envs='conda info --envs'

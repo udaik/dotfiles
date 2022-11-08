@@ -1,0 +1,3 @@
+#!/bin/bash
+
+/usr/bin/svn log -r$1 -v svn://svnserver/ 

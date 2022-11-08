@@ -1,0 +1,67 @@
+set nocompatible "Get out of horrible vi-compatible mode
+set autoindent
+set smartindent
+set cindent
+set expandtab
+
+set history=1000
+
+set tabstop=4
+set shiftwidth=4
+set number "Show line numbers
+set hlsearch
+
+set showmatch "Shows matching paranthesis
+
+set ruler "Displays the current cursor positions
+set ic "ignore case
+
+set incsearch "Show incremental search
+"set backspace=indent,eol,start
+set noerrorbells " no noises
+map \ccom <Esc>I/*<Esc>A*/<Esc>
+
+if !has('gui_running')
+    set t_Co=8 t_md=
+endif
+
+if !exists("syntax_on")
+    syntax on
+endif
+
+if version >= 600
+    syn on
+endif
+
+let g:solarized_termcolors=256
+let g:solarized_contrast="high"    "default value is normal
+let g:solarized_visibility="high"    "default value is normal
+syntax enable
+set background=dark
+
+" colorscheme solarized
+" colorscheme github
+let Tlist_Auto_Open = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Use_SingleClick = 1
+let Tlist_WinWidth = 40
+
+:command WQ wqa
+:command Wq wqa
+:command W wa
+:command Q qa
+:set backspace=indent,eol,start
+set t_Co=16
+
+let python_highlight_all = 1
+let g:airline_powerline_fonts = 1
+
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+" Add plugins here
+
+call vundle#end()
+filetype plugin indent on
