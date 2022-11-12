@@ -24,7 +24,7 @@ fi
 for session in $sessions; do 
     let counter+=1
     if [ $counter == $session_id ]; then
-        exec tmux attach -t $session
+        exec tmux -u attach -t $session
     fi
 done
 

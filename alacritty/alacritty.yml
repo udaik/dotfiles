@@ -1,0 +1,22 @@
+import:
+  - ~/.dotfiles/alacritty/alacritty-theme/themes/snazzy.yaml
+
+font:
+  normal:
+    family: FiraCode Nerd Font Mono
+    style:  Retina
+  bold:
+    family: FiraCode Nerd Font Mono
+    style:  Bold
+  italic:
+    family: FiraCode Nerd Font
+    style:  Italic
+  bold_italic:
+    family: FiraCode Nerd Font
+    style: BoldItalic
+  size: 12
+
+
+shell:
+  program: /usr/bin/zsh
+
