@@ -5,6 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source /usr/share/fzf/shell/key-bindings.zsh
+
+plugins=(git sudo kubectl fzf)
+
 USE_POWERLINE="true"
 
 # Lines configured by zsh-newuser-install
@@ -32,16 +36,19 @@ export FZF_CTRL_T_COMMMAND="$FZF_DEFAULT_COMMAND"
 export EDITOR=nvim
 alias vim=nvim
 alias vi=nvim
+alias cp=xcp
+alias ls=lsd
+alias cat=bat
 
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH=/home/udai/.dotfiles/bin:$PATH
 
-alias ls=exa
-alias bat=cat
-
 eval "$(zoxide init --cmd z zsh)"
+source <(kubectl completion zsh)
+
+export PATH=$PATH:$HOME/.cargo/bin
 
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
