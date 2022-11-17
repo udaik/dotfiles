@@ -7,7 +7,7 @@ fi
 
 source /usr/share/fzf/shell/key-bindings.zsh
 
-plugins=(git sudo kubectl fzf)
+plugins=(git sudo kubectl fzf zsh-autosuggestions)
 
 USE_POWERLINE="true"
 
