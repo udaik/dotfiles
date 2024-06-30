@@ -1,5 +1,5 @@
 import:
-  - ~/.dotfiles/alacritty/alacritty-theme/themes/snazzy.yaml
+  - ~/.dotfiles/alacritty/alacritty-theme/themes/themes/Cobalt2.yaml
 
 font:
   normal:
