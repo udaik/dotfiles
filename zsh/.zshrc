@@ -7,12 +7,12 @@ fi
 
 source /usr/share/fzf/shell/key-bindings.zsh
 
-plugins=(git sudo kubectl fzf zsh-autosuggestions poetry)
+plugins=(git sudo kubectl fzf zsh-autosuggestions poetry history-sync)
 
 USE_POWERLINE="true"
 
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
+HISTFILE=~/.dotfiles/zsh/histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
 # End of lines configured by zsh-newuser-install
