@@ -91,8 +91,12 @@ export PATH=$PATH:/home/udai/node_modules/fsmonitor/bin
 alias d3x_sync="fsmonitor.js rsync -azP --del --exclude=.git  -e "ssh -p 30690" /oneconvergence/gi udai-kiran@34.220.13.115:~/"
 
 source <(kubectl completion zsh)
+source <(docker completion zsh)
 eval "$(gh copilot alias -- zsh)"
 
 export PATH=$HOME/.local/bin:$PATH
 alias tt="taskwarrior-tui"
 
+export PATH=$PATH:/home/udai/go/bin
+alias kubectl=kubecolor
+compdef kubecolor=kubectl
